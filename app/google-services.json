@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "55457052062",
+    "project_id": "digital-library-hub",
+    "storage_bucket": "digital-library-hub.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:55457052062:android:ee412a34f1d17a5296d28f",
+        "android_client_info": {
+          "package_name": "com.example.digitallibraryhub"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "55457052062-jhu0gltc8mkbal8thg4062umd54flp5o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.digitallibraryhub",
+            "certificate_hash": "a42858f2007f1cd91081d9235dd39a717a696e78"
+          }
+        },
+        {
+          "client_id": "55457052062-9o0836cfup6u6mlg90nu9g1oov06uv02.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgVkHnhCK3d7fHU6OIPSW7gmyFbq93SMI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "55457052062-9o0836cfup6u6mlg90nu9g1oov06uv02.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

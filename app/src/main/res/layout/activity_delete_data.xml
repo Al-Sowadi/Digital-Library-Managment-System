@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/img"
+    tools:context=".DeleteDataAct">
+
+
+
+        <EditText
+            android:id="@+id/searchTextd"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:background="@drawable/switch_tumbs"
+            android:drawableRight="@drawable/ic_baseline_search_24"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:ems="10"
+            android:hint="Enter Name"
+            android:inputType="textPersonName" />
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list_viewd"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/lyocuts"
+        android:layout_marginTop="14dp" />
+
+
+</LinearLayout>

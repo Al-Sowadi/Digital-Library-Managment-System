@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img"
+    android:orientation="vertical"
+    tools:context=".AdminAddBook">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/shape_toolbar01"
+        >
+        <ImageButton
+            android:id="@+id/backbtnAddBook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back_white"
+            android:background="@color/fui_transparent"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            />
+        <ImageView
+            android:id="@+id/iconIvADDBook"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/logo"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iconIvADDBook"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Add new Book"
+            android:textSize="28sp"
+            android:textColor="@color/white"
+            />
+    </RelativeLayout>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:id="@+id/layoutAddCata"
+        android:layout_marginTop="300dp"
+        >
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintEnabled="false"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/colorBackground"
+            android:id="@+id/categoryTilAddBookAdmin"
+            >
+
+            <EditText
+
+                android:id="@+id/categoryEtAddBookAdmin"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+
+                android:inputType="textPersonName|textCapWords"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_baseline_title_24"
+                android:hint="Book Title"
+                android:textColor="@color/white"
+                android:textColorHint="@color/colorTextView"
+                android:layout_width="match_parent"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintEnabled="false"
+            android:id="@+id/categoryAUthorAddBookAdmin"
+            >
+
+            <EditText
+                android:id="@+id/categoryEtAutorAAddBookAdmin"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName|textCapWords"
+                android:drawablePadding="10dp"
+                android:layout_margin="10dp"
+                android:drawableStart="@drawable/ic_baseline_title_24"
+                android:hint="Book Author"
+                android:textColor="@color/white"
+                android:textColorHint="@color/colorTextView"
+                android:layout_width="match_parent"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintEnabled="false"
+            android:id="@+id/categoryDiscAddBookAdmin"
+            >
+
+            <EditText
+                android:id="@+id/categoryEtDiscAAddBookAdmin"
+                android:layout_height="wrap_content"
+
+                android:inputType="textPersonName|textCapWords"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_baseline_title_24"
+                android:hint="Book Discarption"
+                android:layout_margin="10dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/colorTextView"
+                android:layout_width="match_parent"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:textStyle="bold|italic"
+            android:background="#2E2E2E"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:text="Choose Book Type"
+            />
+        <Spinner
+            android:layout_marginTop="1dp"
+            android:id="@+id/spinner"
+            android:background="#2E2E2E"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="25dp" />
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/categoryBtnAddBookAdmin"
+        android:layout_below="@+id/layoutAddCata"
+        android:text="Submit"
+        android:textSize="17sp"
+        android:textAllCaps="false"
+        android:elevation="15dp"
+        android:gravity="center"
+        android:textColor="@color/btncolorcode"
+        android:layout_gravity="center"
+        app:shapeAppearanceOverlay="@style/Button5"
+        app:backgroundTint="#391926"
+     />
+
+
+
+
+</RelativeLayout>

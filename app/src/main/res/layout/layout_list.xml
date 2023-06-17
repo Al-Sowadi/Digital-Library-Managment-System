@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:padding="5dp"
+    android:layout_margin="5dp"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:id="@+id/cv_scheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/UserImageView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:src="@drawable/img_1"
+            android:background="@drawable/ic_baseline_calendar_month_24" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/userName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="15dp"
+                android:textColor="#F88C87"
+                android:text="Schemes"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/userStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorTextView"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="15dp"
+                android:text="Discription test test"
+                android:textSize="20sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                >
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/a001"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_baseline_preview_24"
+                    />
+                <TextView
+                    android:id="@+id/tvage"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/colorTextView"
+                    android:layout_below="@id/a001"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="50dp"
+                    android:text="17-06-2022"
+                    android:textSize="15sp" />
+                <TextView
+                    android:id="@+id/tvlink"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:visibility="invisible"
+                    android:text="17-06-2022"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</RelativeLayout>

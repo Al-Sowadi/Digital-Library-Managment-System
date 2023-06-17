@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img"
+    tools:context=".AddBook">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="50dp"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_marginTop="45dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/tbutcolr"
+            android:text="Add Book"
+            android:textAlignment="center"
+            android:textColor="@color/btncolorcode"
+            android:textSize="30sp"
+            android:textStyle="bold|normal|italic" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/white"
+            android:background="@drawable/switch_trcksbtn"
+            >
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:text="Book Id"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textStyle="bold|normal|italic"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Book id"
+                android:id="@+id/Book_id_add"
+                android:textColor="@color/white"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/white"
+            android:background="@drawable/switch_trcksbtn"
+            >
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:text="Book Name"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textStyle="bold|normal|italic"
+                />
+            <EditText
+                android:id="@+id/Book_tital_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Book tital"
+                android:textColor="@color/white"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/white"
+            android:background="@drawable/switch_trcksbtn"
+            >
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:text="Book Author"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textStyle="bold|normal|italic"
+                />
+            <EditText
+                android:id="@+id/Book_Author_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Book Author"
+                android:textColor="@color/white"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/white"
+            android:background="@drawable/switch_trcksbtn"
+            >
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:text="Book Genre"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textStyle="bold|normal|italic"
+                />
+            <EditText
+                android:id="@+id/Book_Genre_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="e.g.,fiction,biography,etc"
+                android:textColor="@color/white"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/white"
+            android:background="@drawable/switch_trcksbtn"
+            >
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:text="Language"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textStyle="bold|normal|italic"
+                />
+            <EditText
+                android:id="@+id/Book_Language_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Book Language"
+                android:textColor="@color/white"
+                />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/UploadPdfbtn"
+            android:text="Upload"
+            android:textSize="17sp"
+            android:textAllCaps="false"
+            android:elevation="15dp"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:textColor="@color/btncolorcode"
+            android:layout_gravity="center"
+            app:shapeAppearanceOverlay="@style/Button5"
+            app:backgroundTint="#391926"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</LinearLayout>

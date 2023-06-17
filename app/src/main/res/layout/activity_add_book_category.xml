@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img"
+    android:orientation="vertical"
+    tools:context=".AddBookCategoryActivity">
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:textColor="@color/white"
+        android:textStyle="bold|italic"
+        android:background="#2E2E2E"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:text="Choose Book Type"
+        />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/searchTextr1"
+        android:visibility="invisible"
+      />
+    <Spinner
+        android:layout_marginTop="1dp"
+        android:id="@+id/spinnercat"
+        android:background="#2E2E2E"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="25dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list_viewrbook"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/searchTextr"
+        android:layout_marginTop="14dp" />
+</LinearLayout>
